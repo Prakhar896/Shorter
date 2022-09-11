@@ -1,11 +1,16 @@
 const Discord = require('discord.js')
 const axios = require('axios');
+const express = require('express')
 const newLink = require('./commands/newLink');
 const getLinks = require('./commands/getLinks');
 const deleteLink = require('./commands/deleteLink');
-const qr = require('./commands/qr');
 const bot = new Discord.Client();
 require('dotenv').config()
+
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => res.send('Hello world!'));
+app.listen(port, () => console.log(`Shorter bot listening at http://localhost:${port}`))
 
 const Prefix = 'sh!'
 
