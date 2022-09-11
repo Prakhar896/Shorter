@@ -1,0 +1,25 @@
+{
+  "name": "shorter",
+  "version": "1.0.0",
+  "description": "Discord bot that can make short links using Short.io API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prakhar896/Shorter.git"
+  },
+  "author": "Prakhar Trivedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prakhar896/Shorter/issues"
+  },
+  "homepage": "https://github.com/Prakhar896/Shorter#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.0.2",
+    "got": "^12.4.1"
+  }
+}
